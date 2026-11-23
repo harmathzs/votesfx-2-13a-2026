@@ -3,7 +3,7 @@ package com.example.votesfx213a2026;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class HelloController {
+public class VotesController {
     @FXML
     private Label welcomeText;
 
