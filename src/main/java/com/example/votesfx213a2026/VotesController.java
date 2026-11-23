@@ -7,6 +7,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
 import java.net.URL;
+import java.util.Arrays;
 import java.util.ResourceBundle;
 
 /**
@@ -15,9 +16,15 @@ import java.util.ResourceBundle;
  * @author Zsolt Harmath
  * @implSpec TODO: Implement the necessary fields and methods to handle user interactions and solve the specified tasks.
  */
-public class VotesController {
+public class VotesController implements Initializable {
     /**
      * The TableView that displays the votes.
      */
     public TableView votesTableView;
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        // log data
+        // System.out.println(VotesData.votes.length);
+    }
 }
