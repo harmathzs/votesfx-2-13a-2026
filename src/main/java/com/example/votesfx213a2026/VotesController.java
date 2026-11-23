@@ -20,6 +20,7 @@ public class VotesController implements Initializable {
     /**
      * The TableView that displays the votes.
      */
+    @FXML
     public TableView votesTableView;
 
     @Override

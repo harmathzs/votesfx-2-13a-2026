@@ -3,11 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="800.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
-    fx:controller="com.example.votesfx213a2026.VotesController"
->
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="800.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.votesfx213a2026.VotesController">
     <top>
         <MenuBar BorderPane.alignment="CENTER">
             <menus>
@@ -42,9 +38,14 @@
         </VBox>
     </right>
     <center>
-        <TableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <TableView fx:id="votesTableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
             <columns>
-                <TableColumn prefWidth="50.0" text="Id" />
+                <TableColumn fx:id="idColumn" prefWidth="50.0" text="Id" />
+                <TableColumn fx:id="firstNameColumn" prefWidth="75.0" text="First Name" />
+                <TableColumn fx:id="lastNameColumn" prefWidth="75.0" text="Last Name" />
+                <TableColumn fx:id="birthdayColumn" prefWidth="75.0" text="Birthday" />
+                <TableColumn fx:id="addressColumn" prefWidth="100.0" text="Address" />
+                <TableColumn fx:id="partyColumn" prefWidth="75.0" text="Voted Party" />
             </columns>
         </TableView>
     </center>
